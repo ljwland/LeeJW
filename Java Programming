@@ -1,0 +1,16 @@
+package chap02;
+import java.util.Scanner;
+public class KetboardInput2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner stdIn = new Scanner(System.in);
+		System.out.print("Input the name, age and weight devided with spaces : ");
+		String name = stdIn.next();
+		int i = stdIn.nextInt();
+		double d = stdIn.nextDouble();
+		System.out.println(name + "씨의 나이는" + i + "세이고");
+		System.out.println("몸무게는 " + d + "kg입니다.");
+	}
+
+}
