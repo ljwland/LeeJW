@@ -2,7 +2,6 @@ package chap02;
 import java.util.Scanner;
 public class KetboardInput2 {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner stdIn = new Scanner(System.in);
 		System.out.print("Input the name, age and weight devided with spaces : ");
 		String name = stdIn.next();
@@ -12,6 +11,7 @@ public class KetboardInput2 {
 		System.out.println("몸무게는 " + d + "kg입니다.");
 	}
 }
+
 
 package chap03;
 public class NumericTypeTest {
@@ -28,6 +28,7 @@ public class NumericTypeTest {
 	}
 }
 
+
 package chap03;
 public class OctHexTest {
 	public static void main(String[] args) {
@@ -42,5 +43,20 @@ public class OctHexTest {
 		System.out.println("2진수 0b111 = " + 0b111); //7
 		System.out.println("8진수 0777 = " + 0777); //511
 		System.out.println("16진수 0xfff = " + 0xfff); //4095
+	}
+}
+
+
+package chap03;
+public class FloatDoubleTest {
+	public static void main(String[] args) {
+		float a = 12345678901234567890.0f; //float형을 사용할때는 마지막에 f를 꼭 붙여야 한다.
+		double b = 12345678901234567890.0; //묵시적으로 실수는 double로 간주한다. 그러므로 끝에 d를 붙이지 않아도 된다.
+		System.out.println("float 변수 a의 값 : " +a); //1.23456789E19
+		System.out.println("double 변수 b의 값 : " +b); //1.2345678901234567890E19
+		float c = 1.0f / 3.0f;
+		double d = 1.0 / 3.0; //두 결과값 모두 무한히 반복되는 수지만 표현 가능 범위 내의 부분에서만 저장되고 출력된다.
+		System.out.println("float 변수 c의 값 : " +c); //0.33333334
+		System.out.println("double 변수 d의 값 : " +d); //0.3333333333333333
 	}
 }
