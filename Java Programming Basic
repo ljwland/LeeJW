@@ -12,11 +12,9 @@ public class KetboardInput2 {
 		System.out.println(name + "씨의 나이는" + i + "세이고");
 		System.out.println("몸무게는 " + d + "kg입니다.");
 	}
-
 }
 
 package chap03;
-
 public class NumericTypeTest {
 
 	public static void main(String[] args) {
@@ -30,5 +28,4 @@ public class NumericTypeTest {
 		long d = 9223372036854775807L;
 		System.out.println("9223372036854775807L을 저장한 byte값은 : " + d);
 	}
-
 }
