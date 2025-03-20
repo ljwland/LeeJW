@@ -14,3 +14,21 @@ public class KetboardInput2 {
 	}
 
 }
+
+package chap03;
+
+public class NumericTypeTest {
+
+	public static void main(String[] args) {
+		//자바에서 정수리터럴은 무조건 int형으로 취급한다. 한다고 해도 -128~127까지만 허용된다.
+		byte a = 127;
+		System.out.println("127을 저장한 byte값은 : " + a);
+		short b = 32767;
+		System.out.println("32767을 저장한 byte값은 : " + b);
+		int c = 2147483647;
+		System.out.println("2147483647을 저장한 byte값은 : " + c);
+		long d = 9223372036854775807L;
+		System.out.println("9223372036854775807L을 저장한 byte값은 : " + d);
+	}
+
+}
