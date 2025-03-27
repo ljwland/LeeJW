@@ -140,3 +140,25 @@ public class ArithmeticOPTest1 {
 
 
 
+package ch03;
+public class ArithmeticOPTest2 {
+	public static void main(String[] args) {
+		byte a = 127, b = 2;
+		byte c = (byte)(a * b);
+		System.out.println("a * b의 결과를 byte로 출력 : " +c);
+		int d = a * b;
+		System.out.println("a * b의 결과를 int로 출력 : " +d);
+		int i = 1000000, j = 1000000; //이미 둘다 int의 범위를 벗어남
+		int k = i * j; //그러므로 k도 당연히 int의 범위를 벗어나게 된다
+		System.out.println("i * j의 결과를 int로 출력 : " +k); //X
+		long m = (long)(i * j); //이미 int의 범위를 벗어난 상태에서 형 변환하는거라 소용 없음
+		System.out.println("i * j의 결과를 long으로 변환한 후 출력 : " +m); //X
+		m = (long)i * j; //변수 i를 long 변환 후에 long 곱연산
+		System.out.println("i를 long값으로 변환후에 곱셈(long 연산)하여 출력 : " +m); //O
+		m = (long) i * (long)j; //각각의 long으로 형 변환 후 long 연산
+		System.out.println("백만을 long으로 변환 후 곱셈(long 연산)하여 출력 : " +m); //O
+	}
+}
+
+
+
