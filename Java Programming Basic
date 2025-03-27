@@ -94,3 +94,23 @@ public class DataTypeOpertion1 {
 
 
 
+package ch03;
+public class TypeCastingTest1 {
+	public static void main(String[] args) {
+		byte b = 120;
+		int i = b;
+		System.out.println("확대 형 변환 : " +i); //120
+		int j = 259;
+		double d = 259.428;
+		System.out.println("축소 형 변환 결과");
+		b = (byte) j; //int형의 값을 byte형으로 형 변환하여 저장(값 손실)
+		System.out.println("int 259를 byte로 변환 : " +b); //3
+		i = (int) d; //double형의 값을 int형으로 형 변환하여 저장(값 손실)
+		System.out.println("double 259.428을 int로 변환 : " +i); //259
+		b = (byte) d; //double형의 값을 byte형으로 형 변환하여 저장(값 손실)
+		System.out.println("double 259.428을 byte로 변환 : " +b); //3
+	}
+}
+
+
+
