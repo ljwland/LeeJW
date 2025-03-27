@@ -76,3 +76,21 @@ public class TestCharString {
 
 
 
+package ch03;
+import java.util.Scanner;
+public class DataTypeOpertion1 {
+	public static void main(String[] args) {
+		Scanner stdin = new Scanner(System.in);
+		System.out.print("Type first number : ");
+		int first = stdin.nextInt();
+		System.out.print("Type second number : ");
+		int second = stdin.nextInt();
+		double avg1 = (first + second) / 2;
+		System.out.println("Integral number Calcuation : Average is ("+first+" + "+second+")/2" + " = "+ ""+avg1+"");
+		double avg2 = (first + second) / 2.0;
+		System.out.println("Real number Calcuation : Average is ("+first+" + "+second+")/2.0" + " = "+ ""+avg2+"");
+	}
+}
+
+
+
