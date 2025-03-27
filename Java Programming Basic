@@ -114,3 +114,29 @@ public class TypeCastingTest1 {
 
 
 
+package ch03;
+public class ArithmeticOPTest1 {
+	public static void main(String[] args) {
+		int a = 7, b = 2;
+		int sum = a + b;
+		System.out.println("a + b = " +sum);
+		int sub = a - b;
+		System.out.println("a - b = " +sub);
+		int mul = a * b;
+		System.out.println("a * b = " +mul);
+		int div = a / b;
+		System.out.println("a / b = " +div);
+		int mod = a % b;
+		System.out.println("a % b = " +mod);
+		int c = ++a;
+		System.out.println("a 전위 증가 연산 (prefix) = " +c);
+		System.out.println("a = " +a);
+		int d = b++;
+		System.out.println("b의 후위 증가 연산 (postfix) = " +d);
+		System.out.println("b = " +b);
+		//전위 증가 연산이든 후위 증가 연산이든 먼저 나온 명령어대로 처리한다.
+	}
+}
+
+
+
