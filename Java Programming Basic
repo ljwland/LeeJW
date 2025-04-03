@@ -241,3 +241,24 @@ public class BitOPTest {
 
 
 
+package ch03;
+public class AssignOPTest {
+	public static void main(String[] args) {
+		int a = 10;
+		System.out.println("a = " +a);
+		a += 4; //a = a + 4, 14
+		System.out.println("a += 4 result : " +a);
+		a %= 4; //a = a % 4, 2
+		System.out.println("a %= 4 result : " +a);
+		a <<= 4; //a = a << 4, 2를 왼쪽으로 4비트 시프트, 32출
+		System.out.println("a <<= 4 result : " +a);
+		boolean b = false;
+		b &= a > 2; //b = b & a > 2를 수행, false
+		System.out.println("b &= a > 2 result : " +b);
+		b |= a > 2; //b = b | a > 2를 수행, true
+		System.out.println("b |= a > 2 result : " +b);
+	}
+}
+
+
+
