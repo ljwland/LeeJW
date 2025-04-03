@@ -224,3 +224,20 @@ public class LogicalOPTest {
 
 
 
+package ch03;
+public class BitOPTest {
+	public static void main(String[] args) {
+		int a = 14;
+		int b = 11; //14에 대한 2진법 표현
+		System.out.println("a = " +a+"("+Integer.toBinaryString(a)+")");//14(1110)
+		System.out.println("b = " +b+"("+Integer.toBinaryString(b)+")");//11(1011)
+		System.out.println("a & b = " +(a & b)+"("+Integer.toBinaryString(a & b)+")");//10(1010)
+		System.out.println("a | b = " +(a | b)+"("+Integer.toBinaryString(a | b)+")");//15(1111)
+		System.out.println("a ^ b = " +(a ^ b)+"("+Integer.toBinaryString(a ^ b)+")");//5(101)
+		System.out.println("~b = " +(~b)+"("+Integer.toBinaryString(~b)+")");
+		//-12(11111111111111111111111111110100)
+	}
+}
+
+
+
