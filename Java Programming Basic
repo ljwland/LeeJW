@@ -278,3 +278,22 @@ public class TernaryOPTest {
 
 
 
+package ch03;
+public class StringTest1 {
+	public static void main(String[] args) {
+		String str1 = "아! 대한민국";
+		String str2 = "Korea";
+		System.out.println(str1 + str2);
+		System.out.println("아! 대한민국\nKorea");
+		int a = 1000;
+	    int b = 2000;
+	    System.out.println(str1 + a + b + "리 금수강산 "); //정수형 변수 연결 출력, 10002000
+	    System.out.println(str1 + (a + b) + "리 금수강산 "); //정수형 변수의 덧셈을 우선 수행 출력, 3000
+	    System.out.println(a + b + "리 금수강산 "); //정수형 변수의 덧셈 먼저 나옴
+	    System.out.println('3' + "천리 금수강산 "); //'3'이라는 문자를 문자열과 연결
+	    System.out.println('3' + 2997 + "리 금수강산 "); //'3'이라는 문자를 숫자와 연결, 51(유니코드)+2997=3028
+	}
+}
+
+
+
