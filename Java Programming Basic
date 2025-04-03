@@ -186,3 +186,24 @@ public class ArithmeticOPTEST3 {
 
 
 
+package ch03;
+public class RelationalOPTest {
+	public static void main(String[] args) {
+		byte a = 20;
+		double d = 3.14;
+		boolean flag;
+		flag = a > d;
+		System.out.println("a가 b보다 큰가?\t" +flag);
+		flag = a == 20.0f; //byte형이 float형으로 자동 변환
+		System.out.println("a가 20.0f보다 같은가?\t" +flag);
+		flag = 10 != 10.0; //정수 리터럴 10이 실수로 변환되어 비교
+		System.out.println("10이 10.0과 같지 않은가?\t" +flag);
+		flag = 10 <= 20;
+		System.out.println("10이 20보다 작거나 같은가?\t" +flag);
+		System.out.println("10이 20보다 작은가?\t" + (10 < 20)); //관계연산자를 직접 출력문에 사용
+		System.out.println("10이 20보다 크거나 같은가?\t" + (10 >= 20));
+	}
+}
+
+
+
