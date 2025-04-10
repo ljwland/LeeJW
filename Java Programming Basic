@@ -297,3 +297,19 @@ public class StringTest1 {
 
 
 
+package ch04;
+import java.util.Scanner;
+public class SimpleIFTest3 {
+	public static void main(String[] args) {
+		Scanner stdin = new Scanner(System.in);
+		System.out.print("type the score : ");
+		int grade = stdin.nextInt();
+		if(grade >= 90)  {
+			System.out.println("congrates ");
+			System.out.println("you get A");
+		}
+		System.out.println("Thank you");
+	}
+}
+
+
