@@ -351,3 +351,25 @@ public class DoubleIFTest2 {
 
 
 
+package ch04;
+import java.util.Scanner;
+public class MultiIFTest1 {
+	public static void main(String[] args) {
+		Scanner stdin = new Scanner(System.in);
+		System.out.print("type the score : ");
+		int s = stdin.nextInt();
+		if(s >= 90)
+			System.out.println("grade A");
+		else if(s >= 80)
+			System.out.println("grade B");
+		else if(s >= 70)
+			System.out.println("grade C");
+		else if(s >= 60)
+			System.out.println("grade D");
+		else
+			System.out.println("grade fail");
+	}
+}
+
+
+
