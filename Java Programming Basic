@@ -313,3 +313,21 @@ public class SimpleIFTest3 {
 }
 
 
+
+package ch04;
+import java.util.Scanner;
+public class DoubleIFTest1 {
+	public static void main(String[] args) {
+		Scanner stdin = new Scanner(System.in);
+		System.out.println("type the score : ");
+		int grade = stdin.nextInt();
+		if(grade >= 90) //{}대괄호가 없을 경우 밑에 한줄만 실행된다.
+			System.out.println("grade A");
+		else
+			System.out.println("grade A fail");
+		System.out.println("thank you");
+	}
+}
+
+
+
