@@ -373,3 +373,25 @@ public class MultiIFTest1 {
 
 
 
+package ch04;
+import java.util.Scanner;
+public class MultiIFTest2 {
+	public static void main(String[] args) {
+		Scanner stdin = new Scanner(System.in);
+		System.out.print("type the number : ");
+		int c = stdin.nextInt();
+		if(c < 0) {
+			System.out.print("number " +c);
+			System.out.println(" is minus");
+		}
+		else if (c == 0)
+			System.out.println("number is 0");
+		else {
+			System.out.print("number " +c);
+			System.out.println(" is plus");
+		}
+	}
+}
+
+
+
