@@ -331,3 +331,23 @@ public class DoubleIFTest1 {
 
 
 
+package ch04;
+import java.util.Scanner;
+public class DoubleIFTest2 {
+	public static void main(String[] args) {
+		Scanner stdin = new Scanner(System.in);
+		System.out.print("type the number : ");
+		int c = stdin.nextInt();
+		if(c < 0) {
+			System.out.print("num " +c);
+			System.out.println(" is minus");
+		}
+		else {
+			System.out.print("num " +c);
+			System.out.println(" is plus");
+		}
+	}
+}
+
+
+
