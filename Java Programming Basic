@@ -459,3 +459,45 @@ public class SwitchTest1 {
 
 
 
+package chap04;
+import java.util.Scanner;
+public class SwitchTest2 {
+	public static void main(String[] args) {
+		Scanner stdin = new Scanner(System.in);
+		System.out.print("type a month in english : ");
+		String m = stdin.next(); //int형 변수가 아니므로 nextInt가 아니다
+		String Mtos;
+		switch(m) {
+		case "December":
+		case "January":
+		case "Febuary":
+			Mtos = "Winter";
+			break;
+		case "March":
+		case "April":
+		case "May":
+			Mtos = "Spring";
+			break;
+		case "June":
+		case "July":
+		case "August":
+			Mtos = "Summer";
+			break;
+		case "September":
+			System.out.print("Awsome September, ");
+		case "October":
+			System.out.print("Beautiful October, ");
+		case "November":
+			System.out.print("November's falling leaves ");
+			Mtos = "is Fall";
+			break;
+		default:
+			Mtos = "error(choose 1~12)";
+			break;
+		}
+		System.out.println(Mtos);
+	}
+}
+
+
+
