@@ -588,3 +588,29 @@ public class DoWhileTest1 {
 
 
 
+package ch05;
+import java.util.Scanner;
+public class DoWhileTest2 {
+	public static void main(String[] args) {
+		Scanner stdin = new Scanner(System.in);
+		int m;
+		do {
+			System.out.print("type a month in number(end:0) : ");
+			m = stdin.nextInt();
+			if(3 <= m && m <= 5)
+				System.out.println("Spring");
+			else if(6 <= m && m <= 8)
+				System.out.println("Summer");
+			else if(9 <= m && m <= 11)
+				System.out.println("Fall");
+			else if(1 == m || m ==2 || m == 12)
+				System.out.println("Winter");
+			else if(m != 0) //계절에 해당이 안되고 0이 아니면 실행
+				System.out.println("Wrong enter");
+		} while(m != 0); //입력된 값이 0이 아니면 계속 반복
+		System.out.println("Thank you");
+	}
+}
+
+
+
