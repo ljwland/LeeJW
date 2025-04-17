@@ -417,3 +417,45 @@ public class ComConditionTest1 {
 
 
 
+package chap04;
+import java.util.Scanner;
+public class SwitchTest1 {
+	public static void main(String[] args) {
+		Scanner stdin = new Scanner(System.in);
+		System.out.print("type a month in number : ");
+		int m = stdin.nextInt();
+		String Mtos;
+		switch(m) {
+		case 12: //하나의 case문과 같은 효과
+		case 1:
+		case 2:
+			Mtos = "Winter";
+			break;
+		case 3:
+		case 4:
+		case 5:
+			Mtos = "Spring";
+			break;
+		case 6:
+		case 7:
+		case 8:
+			Mtos = "Summer";
+			break;
+		case 9: //각각의 case문을 수행하고 아래 case문 실행
+			System.out.print("Awsome September, ");
+		case 10:
+			System.out.print("Beautiful October, ");
+		case 11:
+			System.out.print("November's falling leaves ");
+			Mtos = "is Fall";
+			break;
+		default: //case를 제외한 경우일 때(else)
+			Mtos = "error(choose 1~12)";
+			break;
+		}
+		System.out.println(Mtos);
+	}
+}
+
+
+
