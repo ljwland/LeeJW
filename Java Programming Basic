@@ -574,3 +574,17 @@ public class WhileTest3 {
 
 
 
+package ch05;
+public class DoWhileTest1 {
+	public static void main(String[] args) {
+		int h = 0, c = 1;
+		do {
+			h += c;
+			c += 1;
+		} while(c <= 10);
+		System.out.println("1~10까지의 합은 " +h+" 입니다");
+	}
+}
+
+
+
