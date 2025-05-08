@@ -719,3 +719,24 @@ public class BreakTest2 {
 
 
 
+package ch05;
+public class BreakLabelTest1 {
+	public static void main(String[] args) {
+		boolean i = true;
+		First:{
+			Second:{
+				Third:{
+					System.out.println("Third Block 'break' Sentence Before");
+					if(i) break Second;  //무조건 Second 블록 벗어남
+					System.out.println("Third Block 'break' Sentence After");
+				}
+				System.out.println("Second Block Sentence");
+			}
+			System.out.println("First Block Sentence");
+		}
+		System.out.println("Main Block Sentence");
+	}
+} //실행 결과 : 3번째, 1번째, 메인 블록만 출력된다.
+
+
+
