@@ -703,3 +703,19 @@ public class BreakTest1 {
 
 
 
+package ch05;
+public class BreakTest2 {
+	public static void main(String[] args) {
+		int i, j;
+		for(i = 1; i < 10; i++) {
+			for(j = 1; j < i; j++) {
+				if(j > 6) break;
+				System.out.print(" * "); //j 값이 6보다 크면 크게 내포된 반복문을 벗어난다
+			}
+			System.out.println();
+		}
+	}
+} //실행결과 :   0   1   2   3   4   5   6   6   6 (별 갯수)
+
+
+
