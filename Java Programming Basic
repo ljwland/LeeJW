@@ -740,3 +740,25 @@ public class BreakLabelTest1 {
 
 
 
+package ch05;
+public class BreakLabelTest2 {
+	public static void main(String[] args) {
+		int i = 2, j;
+		Loop : while(true) {
+			j = 1;
+			if(i < 10)
+				System.out.println("\n---" + i + "단 === "); //9단까지만 출력
+			Innerloop : while(true) { //내포된 반복문 블록에 레이블 지정
+				if(j > 9) break; //내포된 반복문만 벗어난다
+				if(i > 9) break Loop; //Loop 반복문을 벗어난다
+				System.out.println(i+" * " + j + " = " + i*j);
+				j++;
+			}
+			System.out.println();
+			i++;
+		}
+	}
+} //결과 : 2단부터 9단까지 생성
+
+
+
