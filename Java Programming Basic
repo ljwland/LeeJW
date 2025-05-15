@@ -780,3 +780,19 @@ public class ContinueTest1 {
 
 
 
+package ch05;
+public class ContinueLabelTest1 {
+	public static void main(String[] args) {
+		int i, j;
+		Outer : for(i = 2; i <= 9; i += 1) { //Outer 반복블록
+			System.out.println("=== " + i + "단 ===");
+			for(j = 1; j <= 9; j++) {
+				if(j == 3) continue Outer; //Outer 블록 제어로 이동
+				System.out.println(i+" * " + j + " = " + i*j);
+			}
+		}
+	}
+} //결과 : 2~9단까지 x2까지만 출력
+
+
+
