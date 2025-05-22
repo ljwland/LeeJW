@@ -838,3 +838,48 @@ public class ArraysTest2 {
 
 
 
+package ch06;
+import java.util.Scanner;
+public class OneArraysTest1 {
+	public static void main(String[] args) {
+		int inum[] = {8, 7, 3, 6, 9, 6, 8, 7, 0, 4, 1, 2};
+		Scanner stdin = new Scanner(System.in);
+		System.out.print("찾고 싶은 숫자 입력 : ");
+		int key = stdin.nextInt();
+		int count = 0; //횟수 저장용 변수
+		for(int i = 0; i < inum.length; i++) { //위치를 알아야 하므ㅗ 확장된 for문 사용 불가
+			if(inum[i] == key) {//값이 지정된 값과 일치하면 count값을 증가시키고 출력
+				count++;
+				System.out.println((i + 1) + "번째 데이터와 일치");
+			}
+		}
+		if(count == 0) //값이 없을 경우 횟수 없음을 출력
+			System.out.println(key + "값은 배열에 없습니다.");
+		else //값이 있는 경우 횟수 출력
+			System.out.println(key + "값은 배열에 "+count+"개 있습니다.");
+	}
+}
+
+
+
+package ch06;
+public class OneArrayTest2 {
+	public static void main(String[] args) {
+		String slist[] = {"Seoul", "Daejeon", "Daegu", "Kwangju", "Incheon", "Jeju", "Busan"};
+		System.out.print("원래의 배열 : ");
+		for(String s : slist) 
+			System.out.print(s + " "); //원래의 배열 출력
+		System.out.println();
+		for(int i = 0; i < slist.length / 2; i++) { //배열 길이의 반에 해당되는 횟수만큼 교환
+			String temp = slist[i]; //하나의 새로운 변수를 만들어서 일단 여기에 복사해둔다
+			slist[i] = slist[slist.length - i -1]; //slist.length는 7이다
+			slist[slist.length - i - 1] = temp;
+		}
+		System.out.print("역순으로 재배치된 배열 : ");
+		for(String s : slist)
+			System.out.print(s + " "); //역순으로 재배치된 배열 출력
+	}
+}
+
+
+
