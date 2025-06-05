@@ -1005,3 +1005,32 @@ public class ArrayCMethodTest2 {
 
 
 
+package ch07; 
+class PlusMinus { //라이브러리 클래스 생성 = 실행은 안됨
+	int add, sub;
+	public String plus(int x, int y) {
+		add = x + y;
+		return "두 수의 합은 " +add;
+	}
+	public String minus(int x, int y) {
+		sub = x - y;
+		return "두 수의 차는 " +sub;
+	}
+}
+
+
+
+package ch07;
+class PlusMinusTest1 { //기존에 만든 라이브러리 클래스 이용
+	public static void main(String[] args) {
+		PlusMinus ob1 = new PlusMinus();
+		String ssum, sminus;
+		ssum = ob1.plus(50, 30);
+		sminus = ob1.minus(50, 30);
+		System.out.println(ssum); //두 수의 합은 80
+		System.out.println(sminus); //두 수의 차는 20
+	}
+}
+
+
+
