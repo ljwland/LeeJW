@@ -1034,3 +1034,33 @@ class PlusMinusTest1 { //기존에 만든 라이브러리 클래스 이용
 
 
 
+package ch07;
+class MultiDiv extends PlusMinus { //라이브러리 메서드 생성, PlusMinus라는 메서드가 미리 있어야 실행된다
+	int gop; //두 개의 속성 지정
+	double nanum;
+	public String multi(int x, int y) { //multi 메서드 지정
+		gop = x * y;
+		return "두 수의 곱은 " +gop;
+	}
+	public String div(int x, int y) { //div 메서드 지정
+		nanum = (double)x / y;
+		return "두 수의 나눔은 " +nanum;
+	}
+}
+public class FourRulesTest1 { //메인 메서드
+	public static void main(String[] args) {
+		String splus, sminus, smulti, sdiv;
+		MultiDiv ob1 = new MultiDiv(); //MultiDiv 클래스로부터 객체 생성
+		splus = ob1.plus(50, 30); //객체의 메서드 호출
+		sminus = ob1.minus(50, 30);
+		smulti = ob1.multi(50, 30);
+		sdiv = ob1.div(50, 30);
+		System.out.println(splus); //결과 출력, 각각 80, 20, 1500, 1.66666666667
+		System.out.println(sminus);
+		System.out.println(smulti);
+		System.out.println(sdiv);
+	}
+}
+
+
+
