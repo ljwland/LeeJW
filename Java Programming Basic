@@ -1091,3 +1091,38 @@ public class Box1Test {
 
 
 
+package ch08;
+class Box2 {
+	int width = 10;
+	int height = 20;
+	int depth = 30; //3개의 속성 선언과 값 설정
+}
+
+public class Box2Test1 {
+	public static void main(String[] args) {
+		int myint1 = 100;
+		int myint2 = myint1;
+		System.out.println("첫 번째 값 : " +myint1+ "    두 번째 값 : " +myint2); //100, 100
+		myint1 = 200;
+		System.out.println("첫 번째 값 : " +myint1+ "    두 번째 값 : " +myint2); //200, 100
+		Box2 mybox1 = new Box2();
+		Box2 mybox2 = new Box2();
+		mybox1.width = 20;
+		mybox2.depth = 123;
+		System.out.println("mybox1.width : " +mybox1.width); //20
+		System.out.println("mybox1.height : " +mybox1.height); //20
+		System.out.println("mybox1.depth : " +mybox1.depth); //30
+		System.out.println("mybox2.width : " +mybox2.width); //10
+		System.out.println("mybox2.height : " +mybox2.height); //20
+		System.out.println("mybox2.depth : " +mybox2.depth); //123
+		Box2 mybox3 = mybox2;
+		mybox2.width = 1000;
+		mybox2.height = 2000;
+		System.out.println("mybox3.width : " +mybox3.width); //1000
+		System.out.println("mybox3.width : " +mybox3.height); //2000
+		System.out.println("mybox3.width : " +mybox3.depth); //123
+	}
+}
+
+
+
